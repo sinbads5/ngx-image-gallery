@@ -1,40 +1,40 @@
 {
-  "name": "ngx-image-gallery",
-  "version": "1.4.1",
-  "description": "Probably the best Angular 4+ modal & inline image gallery. Angular upgrade for ng-image-gallery.",
-  "scripts": {
-    "build": "gulp build && ngcc && ngcc -s dist/",
-    "build:watch": "gulp",
-    "docs": "npm run docs:build",
-    "docs:build": "compodoc -p tsconfig.json -n ngx-image-gallery -d docs --hideGenerator",
-    "docs:serve": "npm run docs:build -- -s",
-    "docs:watch": "npm run docs:build -- -s -w",
-    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
-    "lite": "lite-server",
-    "playground:build": "tsc -p playground -w",
-    "playground": "concurrently \"npm run build:watch\" \"npm run playground:build\" \"npm run lite\"",
-    "install:demo": "cd demo-app && npm install",
-    "serve": "cd demo-app && ng serve --open",
-    "demo": "npm run install:demo && npm run serve",
-    "test": "tsc && karma start"
-  },
-  "repository": {
+  "_from": "github:sinbads5/ngx-image-gallery#master",
+  "_id": "ngx-image-gallery@1.4.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/ngx-image-gallery",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "git+https://github.com/thatisuday/ngx-image-gallery.git"
+    "raw": "ngx-image-gallery@github:sinbads5/ngx-image-gallery#master",
+    "name": "ngx-image-gallery",
+    "escapedName": "ngx-image-gallery",
+    "rawSpec": "github:sinbads5/ngx-image-gallery#master",
+    "saveSpec": "github:sinbads5/ngx-image-gallery#master",
+    "fetchSpec": null,
+    "gitCommittish": "master"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "github:sinbads5/ngx-image-gallery#e14dffa818e343cb546d9ad267a6a5c255586100",
+  "_spec": "ngx-image-gallery@github:sinbads5/ngx-image-gallery#master",
+  "_where": "D:\\Code\\TebcanPortalProject\\Src\\DoctorPatientPortal\\ngx-tebcan",
   "author": {
     "name": "Uday Hiwarale",
     "email": "thatisuday@gmail.com"
   },
-  "keywords": [
-    "image",
-    "gallery",
-    "angular"
-  ],
-  "license": "ISC",
   "bugs": {
     "url": "git+https://github.com/thatisuday/ngx-image-gallery.git/issues"
   },
+  "bundleDependencies": false,
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "lodash": "^4.17.15"
+  },
+  "deprecated": false,
+  "description": "Probably the best Angular 4+ modal & inline image gallery. Angular upgrade for ng-image-gallery.",
   "devDependencies": {
     "@angular/cli": "^9.0.2",
     "@angular/common": "^9.0.1",
@@ -79,12 +79,43 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "main": "dist/ngx-image-gallery.umd.js",
-  "module": "dist/ngx-image-gallery.js",
+  "homepage": "https://github.com/thatisuday/ngx-image-gallery#readme",
   "jsnext:main": "dist/ngx-image-gallery.js",
+  "keywords": [
+    "image",
+    "gallery",
+    "angular"
+  ],
+  "license": "ISC",
+  "main": "dist/ngx-image-gallery.umd.js",
+  "module_ivy_ngcc": "__ivy_ngcc__/dist/ngx-image-gallery.js",
+  "module": "dist/ngx-image-gallery.js",
+  "name": "ngx-image-gallery",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatisuday/ngx-image-gallery.git"
+  },
+  "scripts": {
+    "build": "gulp build && ngcc && ngcc -s dist/",
+    "build:watch": "gulp",
+    "demo": "npm run install:demo && npm run serve",
+    "docs": "npm run docs:build",
+    "docs:build": "compodoc -p tsconfig.json -n ngx-image-gallery -d docs --hideGenerator",
+    "docs:serve": "npm run docs:build -- -s",
+    "docs:watch": "npm run docs:build -- -s -w",
+    "install:demo": "cd demo-app && npm install",
+    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
+    "lite": "lite-server",
+    "playground": "concurrently \"npm run build:watch\" \"npm run playground:build\" \"npm run lite\"",
+    "playground:build": "tsc -p playground -w",
+    "serve": "cd demo-app && ng serve --open",
+    "test": "tsc && karma start",
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  },
   "typings": "dist/ngx-image-gallery.d.ts",
-  "dependencies": {
-    "hammerjs": "^2.0.8",
-    "lodash": "^4.17.15"
+  "version": "1.4.1",
+  "__processed_by_ivy_ngcc__": {
+    "module": "9.0.1",
+    "typings": "9.0.1"
   }
 }
